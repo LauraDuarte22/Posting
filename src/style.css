@@ -1,0 +1,26 @@
+:root {
+  font-family: "Montserrat";
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #ffffff;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+@font-face {
+  font-family: Montserrat;
+  font-display: auto;
+  src: url("./assets/fonts/Montserrat-Bold.ttf") format("ttf"),
+    url("./assets/fonts/Montserrat-Light.ttf") format("ttf"),
+    url("./assets/fonts/Montserrat-Medium.ttf") format("ttf"),
+    url("./assets/fonts/Montserrat-Regular.ttf") format("ttf");
+}
+body {
+  font-family: Montserrat !important;
+
+}
