@@ -7,7 +7,7 @@ export default defineConfig({
   build: {
     chunkSizeWarningLimit: 1600,
   },
-  publicPath: process.env.NODE_ENV === "production" ? "/Posting/" : "/",
+  publicPath: process.env.NODE_ENV === "production" ? "/posting/" : "/",
   configureWebpack: {
     devServer: {
       historyApiFallback: true,
