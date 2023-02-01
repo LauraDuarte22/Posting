@@ -24,7 +24,7 @@
       class="img-fluid mx-auto d-block mt-5 flow"
     />
     <div>
-      <div class="container d-flex align-items-center justify-content-center content ">
+      <div class="container d-flex align-items-center justify-content-center margin-top  content ">
         <img
           src="../assets/work-process/2Recopilacióndelanformación.png"
           class="img-fluid img "
