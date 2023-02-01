@@ -22,7 +22,7 @@
           atraer a tus clientes mediante las herramientas digitales.
         </p>
       </div>
-      <div class="col align-self-center mt-5">
+      <div class="col social-media align-self-center mt-5">
         <div class="m-1 d-inline">
           <a
             class="tip"
@@ -183,5 +183,15 @@ import HomeContact from "../components/HomeContact.vue";
 }
 .animation {
   transform: 1s;
+}
+@media (max-width: 720px) {
+  .social-media{
+    margin-left: 8rem!important;
+  }
+}
+@media (max-width: 390px) {
+  .social-media{
+    margin-left: 0.45rem!important;
+  }
 }
 </style>

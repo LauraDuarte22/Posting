@@ -1,8 +1,7 @@
 <template>
-  <div class="container">
-    <Menu ></Menu>
-  </div>
+ 
   <div class="container m-5 fixed-top">
+    <Menu ></Menu>
   <a class="tip" href="/">
     <svg
       xmlns="http://www.w3.org/2000/svg"

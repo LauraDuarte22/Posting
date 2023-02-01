@@ -17,8 +17,9 @@
 #menuToggle {
   display: block;
   position: fixed;
+  right: 20px;
+  margin: 2rem;
   top: 50px;
-  right: 50px;
   z-index: 1;
   -webkit-user-select: none;
   user-select: none;
@@ -59,7 +60,6 @@
 }
 
 #menuToggle input:checked ~ span {
-
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
   background: #707070;
@@ -107,11 +107,17 @@ a {
   opacity: 1;
 }
 /**Responsive */
- @media (max-width: 768px) {
+
+@media (max-width: 1024px) {
   #menuToggle {
-    top: 20px;
-    right: 20px;
+    top: 40px;
+    right: 40px;
   }
- 
-} 
+}
+@media (max-width: 1280px) {
+  #menuToggle {
+    top: 40px;
+    right: 50px;
+  }
+}
 </style>

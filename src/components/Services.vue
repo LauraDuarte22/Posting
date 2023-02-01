@@ -1,30 +1,30 @@
 <template>
   <div class="d-flex justify-content-center services">
-    <a href="/">
+    <a href="/" class="col-md2">
       <img
         src="../assets/Services/Icono-Diseño-Web.png"
         class="img-fluid animation"
         alt="Servicio de Diseño Web"
     /></a>
-    <a>
+    <a href="/" class="col-md2">
       <img
         src="../assets/Services/Icono-Redes-Sociales.png"
         class="img-fluid animation"
         alt="Servicios de gestión de redes sociales"
     /></a>
-    <a href="/trabajos">
+    <a href="/trabajos" class="col-md2">
       <img
         src="../assets/Services/Icono-Diseño-grafico.png"
         class="img-fluid animation"
         alt="Servicios de Diseño Gráfico"
     /></a>
-    <a>
+    <a class="col-md2">
       <img
         src="../assets/Services/Icono-Publicidad-Digital.png"
         class="img-fluid animation"
         alt="Servicios de Publicidad Digital"
     /></a>
-    <a>
+    <a class="col-md2">
       <img
         src="../assets/Services/Icono-Producción-Audiovisual.png"
         class="img-fluid animation"
@@ -57,4 +57,17 @@
     min-width:150px !important;;
   }
 }
+@media (max-width: 767px) {
+  .services {
+    margin-left: 2rem;;
+    flex-wrap: wrap;
+  }
+  .services a {
+    width:30%;
+  }
+  .services a img {
+    min-width:100px !important;;
+  }
+}
+
 </style>

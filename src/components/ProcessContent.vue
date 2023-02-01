@@ -1,48 +1,57 @@
 <template>
-  <div class="container">
-    <div>
-      <div class="container d-flex align-items-center justify-content-center">
-        <img
-          src="../assets/work-process/1Conocimientodelcliente.png"
-          class="img-fluid img "
-          alt="Paso 1 del proceso de trabajos -Conocimiento del cliente"
-        />
-        <h2 class="display-2 text-rigth">
-          Conocimiento<br /><span class="blue fw-bold"> del Cliente</span>
-        </h2>
-      </div>
-      <div class="container d-flex align-items-center justify-content-center">
-        <p class="lead">
-          Entender las necesidades del cliente y de su negocio hace que podamos
-          crear una mejor estrategia.
-        </p>
-      </div>
-      <img src="../assets/process.png" class="img-fluid mx-auto d-block mt-5 flow" />
+  <div class="container process">
+    <div
+      class="container d-flex align-items-center justify-content-center margin-top  content"
+    >
+      <img
+        src="../assets/work-process/1Conocimientodelcliente.png"
+        class="img-fluid img"
+        alt="Paso 1 del proceso de trabajos -Conocimiento del cliente"
+      />
+      <h2 class="display-2 text-rigth">
+        Conocimiento<br /><span class="blue fw-bold"> del Cliente</span>
+      </h2>
     </div>
+
+    <div class="container d-flex align-items-center justify-content-center   ">
+      <p class="lead">
+        Entender las necesidades del cliente y de su negocio hace que podamos
+        crear una mejor estrategia.
+      </p>
+    </div>
+    <img
+      src="../assets/process.png"
+      class="img-fluid mx-auto d-block mt-5 flow"
+    />
     <div>
-      <div class="container d-flex align-items-center justify-content-center">
+      <div class="container d-flex align-items-center justify-content-center content ">
         <img
           src="../assets/work-process/2Recopilacióndelanformación.png"
-          class="img-fluid img"
+          class="img-fluid img "
           alt="Paso 2 del proceso de trabajos -Recopilación de la información"
         />
-        <h2 class="display-2 text-rigth">
+        <h2 class="display-2 text-rigth ">
           Recopilación<br /><span class="blue fw-bold"> de la información</span>
         </h2>
       </div>
-      <div class="container d-flex align-items-center justify-content-center">
-        <p class="lead">
+      <div class="container d-flex align-items-center justify-content-center ">
+        <p class="lead ">
           Cada detalle, objetivo, pregunta, duda, concepto que tiene nuestro
           cliente es clave para la elaboración de la estrategia.
         </p>
       </div>
-      <img src="../assets/process.png" class="img-fluid mx-auto d-block mt-5 flow" />
+      <img
+        src="../assets/process.png"
+        class="img-fluid mx-auto d-block mt-5 flow"
+      />
     </div>
     <div>
-      <div class="container d-flex align-items-center justify-content-center margin-top">
+      <div
+        class="container d-flex align-items-center justify-content-center margin-top content"
+      >
         <img
           src="../assets/work-process/3PlaneaciónyEstructuración.png"
-          class="img-fluid img"
+          class="img-fluid img content"
           alt="Paso 3 del proceso de trabajos -Planeación y estructuración"
         />
         <h2 class="display-2 text-rigth">
@@ -56,11 +65,15 @@
           negocio.
         </p>
       </div>
-      <img src="../assets/process.png" class="img-fluid mx-auto d-block mt-5 flow" />
+      <img
+        src="../assets/process.png"
+        class="img-fluid mx-auto d-block mt-5 flow"
+      />
     </div>
     <div>
-     
-      <div class="container d-flex align-items-center justify-content-center">
+      <div
+        class="container d-flex align-items-center justify-content-center margin-top content"
+      >
         <img
           src="../assets/work-process/4Ejecución.png"
           class="img-fluid img"
@@ -81,34 +94,62 @@
   </div>
 </template>
 <script setup>
-const props = defineProps({
-  imageUrl: String,
-  title: String,
-  text: String,
+window.addEventListener("scroll", function () {
+  var windowHeight = window.innerHeight,
+    topWindow = window.pageYOffset;
+  var elements = document.querySelectorAll(".content");
+  for (var i = 0; i < elements.length; i++) {
+    var targetPosition =
+      elements[i].getBoundingClientRect().top + window.pageYOffset;
+    if (topWindow > targetPosition - windowHeight + 200) {
+      elements[i].style.visibility = "visible";
+      elements[i].classList.add("animated", "fadeIn");
+    }
+  }
 });
 </script>
 <style scoped>
-@media (max-width: 767px) {
-  .flow {
-    width: 10%;
-  }
-  .img{
-    display: block;
-    width: 20%;
-  }
-  
-
+.lead {
+  overflow: auto;
 }
-.margin-top{
+.margin-top {
   margin-top: 10rem;
 }
-.blue{
-  color:#149bd7;
+.blue {
+  color: #149bd7;
 }
+
 @media (max-width: 450px) {
-  .lead{
-    text-align: center !important;;
+  .lead,
+  h2 {
+    text-align: center !important;
   }
- 
+}
+@media (max-width: 767px) {
+  .container {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+}
+.content {
+  opacity: 0;
+  visibility: hidden;
+  transition: transform 0.7s, opacity 0.s;
+  animation: fadeIn 0.75s ease-in;
+  animation-fill-mode:forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 </style>
