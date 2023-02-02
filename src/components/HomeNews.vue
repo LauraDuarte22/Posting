@@ -1,6 +1,6 @@
 <template>
   <div class="mt-5 news">
-    <img src="../assets/news.png" class="img-fluid w-100" />
+    <img src="../assets/news.png" class="img-fluid" />
     <div class="centrado">
       <a class="btn">Noticias</a>
     </div>

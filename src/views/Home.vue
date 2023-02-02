@@ -113,7 +113,7 @@
     </div>
   </div>
   <div class="mt-5">
-    <img src="../assets/posting.png" class="img-fluid w-100" />
+    <img src="../assets/posting.png" class="img-fluid" />
   </div>
 
   <HomeWorks></HomeWorks>
@@ -185,13 +185,19 @@ import HomeContact from "../components/HomeContact.vue";
   transform: 1s;
 }
 @media (max-width: 720px) {
-  .social-media{
-    margin-left: 8rem!important;
+  .social-media {
+    margin-left: 8rem !important;
   }
 }
 @media (max-width: 390px) {
-  .social-media{
-    margin-left: 0.45rem!important;
+  .social-media {
+    margin-left: 0.45rem !important;
   }
+}
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
 }
 </style>

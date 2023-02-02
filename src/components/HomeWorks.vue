@@ -1,28 +1,27 @@
 <template>
-  <div class="row align-items-start margin-top">
-    <div class="col text-center"></div>
-    <div class="col">
-      <h2 class="display-2">Nos enfocamos <span>En la Acción</span></h2>
-      <ul>
-        <li>
-          ¿Cuáles son las acciones especíﬁcas que impulsan el crecimiento de su
-          empresa?
-        </li>
-        <li>¿Necesita más consumidores para comprar su producto?</li>
-        <li>
-          ¿Quiere que más personas se suscriban a su lista, descarguen su
-          aplicación u obtengan información sobre su marca?
-        </li>
-        <li>
-          ¿O quizás su objetivo es simplemente generar más clientes potenciales
-          para sus productos y servicios?.
-        </li>
-      </ul>
-      <div>
-        <a class="btn mt-5 mb-5" href="/proceso-de-trabajo">Ver más</a>
-      </div>
+  <div class="container-works">
+    <h2 class="display-2">
+      Nos enfocamos<br />
+      <span>En la Acción</span>
+    </h2>
+    <ul>
+      <li>
+        ¿Cuáles son las acciones especíﬁcas que impulsan el crecimiento de su
+        empresa?
+      </li>
+      <li>¿Necesita más consumidores para comprar su producto?</li>
+      <li>
+        ¿Quiere que más personas se suscriban a su lista, descarguen su
+        aplicación u obtengan información sobre su marca?
+      </li>
+      <li>
+        ¿O quizás su objetivo es simplemente generar más clientes potenciales
+        para sus productos y servicios?.
+      </li>
+    </ul>
+    <div>
+      <a class="btn mt-5 mb-5" href="/proceso-de-trabajo">Ver más</a>
     </div>
-    <div class="col"></div>
   </div>
 
   <Gallery> </Gallery>
@@ -34,6 +33,15 @@
 import Gallery from "./Gallery.vue";
 </script>
 <style scoped>
+.container-works {
+  margin-top: 9rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 2em;
+}
 .display-2 {
   color: #707070;
 }
@@ -56,7 +64,6 @@ import Gallery from "./Gallery.vue";
   border-color: #149bd7;
 }
 ul {
-  margin: 0.75em 0;
   padding: 0 1em;
   list-style: none;
   line-height: 1.2;
@@ -73,8 +80,4 @@ li::before {
   top: 0.9em;
   position: relative;
 }
-.margin-top{
-  margin-top: 9rem;
-}
-
 </style>

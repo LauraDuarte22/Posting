@@ -1,8 +1,8 @@
 <template>
   <!-- Gallery -->
-  <div class="container-fluid m-5">
-    <div class="row">
-      <div class="col-12 col-sm-6 col-md-4 m-auto">
+  <div class="container-fluid ">
+    <div class="row ">
+      <div class="col-12 col-sm-6 col-md-4">
         <div class="img-wrap">
           <div class="overlay-design"></div>
           <img
@@ -15,7 +15,7 @@
           </div>
         </div>
       </div>
-      <div class="col-12 col-sm-6 col-md-4 m-auto">
+      <div class="col-12 col-sm-6 col-md-4">
         <div class="img-wrap">
           <div class="overlay-web"></div>
           <img
@@ -52,7 +52,7 @@
           </div>
         </div>
       </div>
-      <div class="col-12 col-sm-6 col-md-4 m-auto">
+      <div class="col-12 col-sm-6 col-md-4 ">
         <div class="img-wrap">
           <div class="overlay-social"></div>
           <img
@@ -98,11 +98,16 @@
   width: 350px;
   height: auto;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 
 }
 .img-wrap > img {
   width: 100%;
   height: auto;
+
 }
 /*Overlay para Diseño Web */
 .overlay-web {
@@ -205,6 +210,7 @@
     width: 270px;
     margin-top: 1rem;
     margin-bottom: 1rem;
+    margin-left: 5rem;
   }
   .content-details h3,
   .content-details-md h3,
@@ -217,9 +223,10 @@
   .img-wrap {
     width: 250px;
   }
-  .m-5{
-    margin:0 !important;
-  }
+  .m-5 {
+    margin: 0!important;
+}
+  
 
   .content-details h3,
   .content-details-md h3,
@@ -234,10 +241,11 @@
     width: 220px;
     margin-top: 1rem;
     margin-bottom: 1rem;
+    
   }
-  .m-5{
-    margin:5rem !important;
-  }
+ 
+ 
+  
   .content-details h3,
   .content-details-produccion h3,
   .content-details-large h3 {
